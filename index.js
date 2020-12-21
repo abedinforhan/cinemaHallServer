@@ -7,7 +7,7 @@ const ObjectId=require('mongodb').ObjectId;
 app.use(bodyParser.json())
 app.use(cors());
 
-const port = 8000;
+const port = process.env.PORT||  8000;
 // require('dotenv').config();
 
 
